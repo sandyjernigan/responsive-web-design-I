@@ -109,6 +109,7 @@
 	
 	h2 {
 		font-size: 24px;
+		padding-top: 10px;
 	}
 	
 	h3 {
@@ -162,12 +163,17 @@ article:last-child {
 }
 
 footer {
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 	text-align: center;
 	font-size: 14px;
 }
 
 /* Services */
+
+.services-header-img{
+	width: 100%;
+}
+
 #services .content {
 	display: flex;
 	flex-flow: row wrap;
@@ -180,9 +186,9 @@ footer {
 	flex-grow: 1;
 	flex-shrink: 0;
 	flex-basis: 45%;
-	padding: 15px;
+	padding: 15px 15px 5px 15px;
 	border: 1px black solid;
-	margin: 15px 30px 15px 0;
+	margin: 15px 15px 15px 0;
 }
 
 #services article:nth-child(even) {
@@ -203,7 +209,7 @@ footer {
 	padding-right: 30px;
 }
 
-ul {
+.facts ul {
 	list-style-type: square;
 	padding: 10px 30px;
 	line-height: 30px;
@@ -228,9 +234,27 @@ ul {
 		padding: 20px 0;
 	}
 
+	img {
+		max-width: 100%;
+	}
+
 	#indexpage .contentHeader img {
 		display: none;
 	}
+	
+	main {
+		margin: 0;
+	}
+
+	.facts {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.facts div {
+		width: 100%;
+	}
+	
 }
 
 /* Phones */
@@ -264,7 +288,7 @@ ul {
 	}	
 
 	main {
-		margin: 15px;
+		margin: 0 15px;
 	}
 
 	/* Flex Columns */
@@ -272,9 +296,20 @@ ul {
 		display: flex;
 		flex-direction: column;
 	}
+
+	.twocol, .threecol {
+		display: flex;
+		flex-direction: column;
+	}
 	
 	article {
 		padding: 10px 0;
+	}	
+
+	#services article {
+		margin: 0;
+		flex-basis: 99%;
 	}
 	
 }
+
